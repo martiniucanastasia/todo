@@ -10,6 +10,7 @@ button.addEventListener('click', () => {
 });
 
 textInput.addEventListener('change', (e) => {
+  // Here I change value
   item = e.target.value;
 });
 
@@ -19,7 +20,7 @@ textInput.addEventListener('keyup', (e) => {
     addElement();
   }
 });
-
+  //Here create a function to add an element
 function addElement() {
   let li = document.createElement('li');
   li.textContent = item;
